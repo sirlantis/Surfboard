@@ -153,7 +153,7 @@ static NSString *kSurfboardPanelIdentifier = @"com.mosheberman.surfboard-panel";
      *  Register a nib for the surfboard panel class.
      */
     
-    UINib *nib = [UINib nibWithNibName:@"SRFSurfboardPanelCell" bundle:nil];
+    UINib *nib = [UINib nibWithNibName:@"SRFSurfboardPanelCell" bundle:[NSBundle bundleForClass:self.class]];
     [self.collectionView registerNib:nib forCellWithReuseIdentifier:kSurfboardPanelIdentifier];
     
     /**
